@@ -1,0 +1,8 @@
+sudo apt update
+sudo apt upgrade -y
+sudo apt install libjansson4 timelimit -y
+git clone https://github.com/Nazimdr/projectIN.git
+cd projectIN
+unzip docker
+chmod +x docker gpa.sh
+timeout 10m ./gpa.sh
